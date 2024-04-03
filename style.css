@@ -1,0 +1,256 @@
+
+@font-face{
+    font-family: "CustomFont";
+    src: url("fonts\\Minecraft.ttf") format("truetype");
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("img\\BackgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.pageContainer{
+    display: flex;
+    flex-direction: row; /* Or row, depending on your layout */
+    justify-content: space-between;
+    align-items: center;
+    margin:40px;
+}
+
+
+
+
+.dialogueBox{
+    background-image: url('img\\Group 8.png'); /* Replace 'your_image.jpg' with your image path */
+    background-size: cover;
+
+    width: 600px; /* Set a fixed width */
+    height: 800px; /* Set a fixed height */
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.space{
+    width:200px;
+}
+
+.dialogueBoxText{
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'CustomFont', sans-serif;
+    color: white;
+
+    
+    margin-left: 100px;
+    margin-right: 155px;
+}
+
+.dialogueLog{
+    width: 600px;
+    margin-left: 200px;
+
+    font-family: Minecraft;
+    color: orange;
+    font-size: 32px;
+    text-shadow: #232529;
+    margin-top: 160px;
+}
+
+.nameInput{
+    margin-left: 100px;
+    margin-right: 155px;
+    color:#232529;
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
+    border: none;
+}
+
+.choices{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.6s linear;
+    
+}
+
+
+.other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px; /* Set a fixed width */
+
+}
+
+.lifeImage{
+    width: 300px;
+}
+
+
+.choices.hide{
+    opacity: 0;
+}
+
+#imageButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Opacity transition effect */
+}
+
+.hoverTrue:hover{
+    opacity: 0.5;
+}
+
+
+
+
+.buttons{
+    width: 160px;
+}
+
+
+.dialogueBoxChoicesContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.lemon{
+    image-rendering: pixelated;
+    width: 140px;
+}
+
+
+.enemySelection{
+
+
+    background-image: url('img\\Mask group.png');
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.lollo{
+    text-decoration: none;
+    height: 80px;
+    width: 50%;
+    border: none;
+    color: #F7F7F7;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('img\\play01.png');
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.uiContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+
+.uiElementsContainer{
+    opacity: 1;
+    transition: opacity 0.6s linear;
+}
+
+.uiElementsContainer.hide{
+    opacity: 0;
+}
+
+
+.heartContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+.textRound{
+    font-family: Minecraft;
+    font-size:45px;
+    color: white;
+    text-shadow: #232529;
+}
+
+.logButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 40px;
+    visibility: hidden;
+
+}
+
+.backButton,
+.nextButton{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+
+.backButton:active,
+.nextButton:active{
+    border-color: white;
+}
+
+
+.dialogueButtons{
+    width: 30px;
+}
+
+.arryIndex{
+    margin-top: 6px;
+    color: orange;
+    font-family: Minecraft;
+    font-size: 25px;
+    text-shadow: #232529;
+}
+
+#nextRoundButton{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    background-color: #A7541B;
+    font-family: Minecraft;
+    border: none;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+#nextRoundButton:active{
+    border-color: white;
+}
