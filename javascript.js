@@ -83,6 +83,7 @@ function enemyLife(){
 
 
 const we = document.querySelector(".textRound");
+we.style.fontFamily = "Minecraft, sans-serif";
 
 let isTie = false;
 
